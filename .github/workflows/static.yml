@@ -31,7 +31,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'   # Adjust this if main.html is in a folder
+          path: '.'  # Change to './docs' if main.html is in a folder
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
